@@ -1,0 +1,23 @@
+.wrapper {
+  background-color: rgb(230, 230, 230);
+  height: 250px;
+  width: 250px;
+  margin-left: 25%;
+  margin-top: 100px;
+}
+
+.wrapper1 {
+  background-color: rgb(230, 230, 230);
+  height: 50px;
+  width: 250px;
+  margin-left: 25%;
+  margin-top: 20px;
+}
+
+.wrapper2 {
+  background-color: rgb(230, 230, 230);
+  height: 320px;
+  width: 450px;
+  margin-left: 39%;
+  margin-bottom: 520px;
+}
