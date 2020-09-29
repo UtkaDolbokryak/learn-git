@@ -1,0 +1,6 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url(https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-1/p720x720/88162498_100559741557368_6265834316761137152_n.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=HoDh5Sz_FvgAX-2WQ3p&_nc_ht=scontent-arn2-1.xx&tp=6&oh=8f97ce1bc8e016c7e937e2daa944e79e&oe=5F9863B0);
+  background-size: 100%;
+}

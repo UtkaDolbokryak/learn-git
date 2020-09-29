@@ -1,23 +1,25 @@
-.wrapper {
-  background-color: rgb(230, 230, 230);
-  height: 250px;
-  width: 250px;
-  margin-left: 25%;
-  margin-top: 100px;
+.vk {
+  background-color: #000099;
+  color: white;
+  margin-left: 130px;
+  width: 50px;
+  height: 150px;
 }
 
-.wrapper1 {
-  background-color: rgb(230, 230, 230);
-  height: 50px;
-  width: 250px;
-  margin-left: 25%;
-  margin-top: 20px;
+.Tik {
+  background-color: black;
+  margin-left: 40px;
+  width: 50px;
+  height: 150px;
+  margin-bottom: 35px;
+}
+.odin {
+  color: aquamarine;
+}
+.dva {
+  color: hotpink;
 }
 
-.wrapper2 {
-  background-color: rgb(230, 230, 230);
-  height: 320px;
-  width: 450px;
-  margin-left: 39%;
-  margin-bottom: 520px;
+.Slova {
+  color: white;
 }
