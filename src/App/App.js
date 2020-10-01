@@ -1,40 +1,26 @@
 import React from "react";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <div className="vsy">
-        <div className="Slova">
-          <p>
-            <h1>Откуда мемы лучше</h1>
-          </p>
-        </div>
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentLetterNumber: 0,
+      text:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    };
+  }
 
-        <p>
-          <button
-            onClick={() => {
-              document.location.href =
-                "http://risovach.ru/upload/2014/03/mem/putin_46200719_orig_.jpg";
-            }}
-            className="Tik"
-          >
-            <p className="odin">Тик-</p>
-            <p className="dva">ток</p>
-          </button>
-          <button
-            onClick={() => {
-              document.location.href =
-                "https://risovach.ru/upload/2015/12/mem/putin_100431093_orig_.jpg";
-            }}
-            className="vk"
-          >
-            <h4>vk</h4>
-          </button>
-        </p>
+  render() {
+    return (
+      <div className="App">
+        <div className="text">
+          <span className="completed"></span>
+          <span className="uncompleted">{this.state.text}</span>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
