@@ -6,3 +6,10 @@
   background-color: beige;
   padding: 30px;
 }
+.completed {
+  color: green;
+}
+
+.text {
+  font-size: 24pt;
+}
