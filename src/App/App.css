@@ -13,3 +13,7 @@
 .text {
   font-size: 24pt;
 }
+
+.underlined {
+  border-bottom: 3px black solid;
+}
