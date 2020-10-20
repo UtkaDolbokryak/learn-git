@@ -32,10 +32,30 @@ class App extends React.Component {
       }
     }
     console.log(key);
+    console.log(
+      "Текущий символ: " +
+        this.state.text.substr(this.state.currentLetterNumber, 1)
+    );
+    console.log(this.state.text);
+  }
+
+  loadKolobok() {
+    this.setState({ text: "Загружаю текст..." });
+    fetch("http://localhost:8000/kolobok")
+      .then((response) => response.json())
+      .then((result) => {
+        let text = "";
+        result.text.forEach((element, i) => {
+          text += (i === 0 ? "" : "\n") + element;
+        });
+        console.log(text);
+        this.setState({ text });
+      });
   }
 
   componentDidMount() {
     document.onkeypress = this.keyPressHandler.bind(this);
+    this.loadKolobok();
   }
 
   render() {
